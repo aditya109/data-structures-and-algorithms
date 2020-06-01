@@ -1,28 +1,15 @@
 from heapq import heappop, heappush, heapify 
   
-# Creating empty heap 
-heap = [] 
-heapify(heap) 
-  
-# Adding items to the heap using heappush 
-# function by multiplying them with -1 
-heappush(heap, -1 * 10) 
-heappush(heap, -1 * 30) 
-heappush(heap, -1 * 20) 
-heappush(heap, -1 * 400) 
-  
-# printing the value of maximum element 
-print("Head value of heap : "+str(-1 * heap[0])) 
-  
-# printing the elements of the heap 
-print("The heap elements : ") 
-for i in heap: 
-    print(-1 * i, end = ' ') 
-print("\n") 
-  
-element = heappop(heap) 
-  
-# printing the elements of the heap 
-print("The heap elements : ") 
-for i in heap: 
-    print(-1 * i, end = ' ') 
+min_heap = []
+heapify(min_heap)
+
+heappush(min_heap, 4)
+heappush(min_heap, 2)
+heappush(min_heap, 5)
+heappush(min_heap, 7)
+
+print(heappop(min_heap))
+print(heappop(min_heap))
+print(heappop(min_heap))
+print(heappop(min_heap))
+
