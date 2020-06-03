@@ -1,21 +1,23 @@
-# Python3 Program to check whether a 
-# given key already exists in a dictionary. 
+"""
+Given an array of non-negative integers, you are initially positioned at the first index of the array.
+Each element in the array represents your maximum jump length at that position.
+Determine if you are able to reach the last index.
 
-# Function to print sum 
-def checkKey(dict, key): 
-	
-	if dict.has_key(key): 
-		print ("Present, value =", dict[key] )
-	else: 
-		print ("Not present")
+Example 1:
 
-# Driver Function 
-dict = {'a': 100, 'b':200, 'c':300} 
-key = 'b'
-checkKey(dict, key) 
+Input: nums = [2,3,1,1,4]
+Output: true
+Explanation: Jump 1 step from index 0 to 1, then 3 steps to the last index.
 
-key = 'w'
-checkKey(dict, key) 
+Example 2:
 
+Input: nums = [3,2,1,0,4]
+Output: false
+Explanation: You will always arrive at index 3 no matter what. Its maximum jump length is 0, which makes it impossible to reach the last index.
 
-
+"""
+from typing import List
+class Solution:
+    def canJump(self, nums: List[int]) -> bool:
+		pass
+print(Solution())
