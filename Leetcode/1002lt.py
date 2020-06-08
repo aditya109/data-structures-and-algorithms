@@ -1,28 +1,23 @@
 from typing import List
 class Solution:
     def commonChars(self, A: List[str]) -> List[str]:
-        if len(A) == 0:
-            return []
-        elif len(A) == 1:
-            return list(A[0])
-        else:
-            
-            freq_map = {}
-            
-            for ch in A[0]:
-                if ch in freq_map:
-                    freq_map[ch] += 1
-                else:
-                    freq_map[ch] = 1
-            
-            for string in A[1:]:
-                for k, v in freq_map.items():
-                    if string.count(k) == 0:
-                        freq_map.pop(k)
-                    elif string.count(k) <= v:
-                        freq_map[k] = string.count(k)
-        return -1
+        freq_map = dict()
 
-if __name__ == "__main__":
-    inputString = ["bella","label","roller"]
-    print(Solution().commonChars(inputString))
+        for i in A[0]:
+            if i in freq_map:
+                freq_map[i]+=1
+            else:
+                freq_map[i]=1
+
+        if len(A) == 1:
+            return freq_map.keys()
+        else:
+            pass
+
+
+        
+        
+       
+A = [["bella","label","roller"], ["cool","lock","cook"]]
+for i in A:
+    print(Solution().commonChars(i))
