@@ -8,4 +8,6 @@
     -   CodeSignal
     -   CodeWars
 ### 2.  Covering Data Structures:
-    
+    -   stacks 
+    -   arrays
+    -   graphs
